@@ -1,0 +1,80 @@
+/* Empty. Add your own CSS if you like */
+.first{
+
+
+
+
+}
+
+
+.my-menu {
+/*background-color: #3f4041;*/
+}
+
+.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
+
+  padding: 4px;
+  border-width: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.rent {
+
+  color: red;
+  font-size:20px;
+
+
+}
+
+#wrapper {
+    /*width: 500px;*/
+    /*border: 1px solid black;*/
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#first img {
+  width: 100%;
+  height: 70%;
+    /*width: 300px;*/
+    /*float:left; /* add this */
+    /*border: 1px solid red;*/
+}
+
+
+#second {
+    /*border: 1px solid green;*/
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+    /*float:left;*/
+}
+
+#third {
+    /*border: 1px solid green;*/
+    /*overflow: hidden; /* if you don't want #second to wrap below #first */
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;
+    padding-left: 6px;
+}
+
+#fourth {
+    /*border: 1px solid green;*/
+    /*overflow: hidden; /* if you don't want #second to wrap below #first */
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;      /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap;     /* Opera <7 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    word-wrap: break-word;
+    padding-left: 6px;
+}

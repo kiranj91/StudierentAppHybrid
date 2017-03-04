@@ -1,0 +1,48 @@
+<!-- <ion-view> -->
+<ion-view ng-controller="rentListCtrl"  ng-init="init()" hide-header-bar="true">
+  <ion-header-bar ng-show="true" class="bar-positive" style="background-color: #558b2f;">
+    <div class="buttons">
+    </div>
+     <h1 class="title">Studierent</h1>
+     <div class="buttons">
+         <button class="button button-icon ion-android-search"
+                 ng-click="showFilterBar()"></button>
+     </div>
+   </ion-header-bar>
+<ion-content ng-show="accResultout">
+<ion-list>
+          <div>
+  <ion-item style="padding: 2px; border-width: 0px;" ng-repeat="acc in accs"
+            item="acc" >
+  <div id="wrapper" class="item item-word-wrap" ng-click="selectAcc(acc)">
+<table style="table-layout: auto; width: 100%;">
+            <tr>
+              <td style="width: 25%;">
+                <div id="first">
+                    <img style="display: inline-block;" ng-src="{{acc.img}}">
+                </div>
+              </td>
+              <td style="width: 55%; vertical-align: top;">
+                <div id="second">
+                  <div id="third">{{acc.title}}</div>
+                  <div id="fourth">{{acc.address}}</div>
+                </div>
+              </td>
+              <td style="width: 10%; vertical-align: middle;">
+                <span class="rent">{{acc.rent}}€</span>
+
+              </td>
+            </tr>
+          </table>
+    </div>
+  </ion-item>
+
+  	</div>
+</ion-list>
+<!-- <ion-infinite-scroll
+                     on-infinite="addMoreOrgs()"
+                      distance="1%"
+                        ng-if="!forSearch"
+                   ></ion-infinite-scroll> -->
+<!-- </ion-view> --></ion-content>
+</ion-view>
