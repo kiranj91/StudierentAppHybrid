@@ -37,7 +37,13 @@ $scope.backToLogin = function() {
   $state.go('login');
 
 };
+$scope.Register = function() {
 
+    $scope.show($ionicLoading);
+
+
+    $state.go('register');
+};
 $scope.forgotPassword = function() {
 
     $state.go('forgotPasswordForm');
