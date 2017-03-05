@@ -38,6 +38,13 @@ templateUrl: 'js/login.html',
 controller: 'loginCtrl'
 })
 
+.state('register', {
+url: '/register',
+templateUrl: 'js/register.html',
+controller: 'registerctrl'
+})
+
+
 .state('rentList', {
 url: '/rentList',
 templateUrl: 'js/rent_list.html',
