@@ -1,7 +1,11 @@
 <!-- <ion-view> -->
-<ion-view ng-controller="rentListCtrl"  ng-init="init()" hide-header-bar="true">
+<ion-view ng-controller="rentListCtrl"  ng-init="init()">
   <ion-header-bar ng-show="true" class="bar-positive" style="background-color: #558b2f;">
     <div class="buttons">
+    </div>
+    <div class="buttons">
+        <button class="button button-icon ion-ios-arrow-back"
+                ng-click="backToLogin()"></button>
     </div>
      <h1 class="title">Studierent</h1>
      <div class="buttons">
@@ -19,14 +23,16 @@
             <tr>
               <td style="width: 25%;">
                 <div id="first">
-                    <img style="display: inline-block;" ng-src="{{acc.img}}">
+                    <img style="display: inline-block;" ng-src="{{acc.image}}">
                 </div>
               </td>
               <td style="width: 55%; vertical-align: top;">
                 <div id="second">
                   <div id="third">{{acc.title}}</div>
                   <div id="fourth">{{acc.address}}</div>
+                  <div id="fifth"><a ng-href="#/detail/{{acc}}">View Details</button>>
                 </div>
+
               </td>
               <td style="width: 10%; vertical-align: middle;">
                 <span class="rent">{{acc.rent}}€</span>

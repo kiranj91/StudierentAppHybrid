@@ -27,7 +27,7 @@ function ($scope, $http, $stateParams, $state, $timeout, ionicFilterBar, $ionicL
   $scope.login = function() {
 
     $scope.show($ionicLoading);
-
+    console.log("Coming to the login method..");
 
     $state.go('rentList');
 };
@@ -37,13 +37,21 @@ $scope.backToLogin = function() {
   $state.go('login');
 
 };
-$scope.Register = function() {
+$scope.register = function() {
 
     $scope.show($ionicLoading);
 
 
-    $state.go('register');
+     $state.go('register');
 };
+$scope.filter = function() {
+
+    $scope.show($ionicLoading);
+
+
+     $state.go('filter');
+};
+
 $scope.forgotPassword = function() {
 
     $state.go('forgotPasswordForm');

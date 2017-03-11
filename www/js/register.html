@@ -1,4 +1,7 @@
 <ion-view view-title="Register" name="register-view">
+  <ion-header-bar ng-show="true" class="bar-positive" style="background-color: #558b2f;">
+     <h1 class="title">Studierent</h1>
+   </ion-header-bar>
   <ion-content class="padding">
     <div>
       <img style="margin-left: 100px;  margin-top: 20px; height: 60px;
@@ -7,29 +10,29 @@
       </div>
       <div class="list list-inset">
           <label class="item item-input">
-              <input type="text" placeholder="First Name" ng-model="data.firstname">
+              <input type="text" placeholder="First Name" ng-model="registerData.firstname">
           </label>
           <label class="item item-input">
-              <input type="password" placeholder="Last Name" ng-model="data.lastname">
+              <input type="text" placeholder="Last Name" ng-model="registerData.lastname">
           </label>
           <label class="item item-input">
-              <input type="text" placeholder="Address" ng-model="data.address">
+              <input type="text" placeholder="Address" ng-model="registerData.address">
           </label>
           <label class="item item-input">
-              <input type="password" placeholder="Contact No" ng-model="data.contactno">
+              <input type="text" placeholder="Contact No" ng-model="registerData.contactno">
           </label>
           <label class="item item-input">
-              <input type="text" placeholder="Email" ng-model="data.email">
+              <input type="text" placeholder="Email" ng-model="registerData.email">
           </label>
           <label class="item item-input">
-              <input type="password" placeholder="Password" ng-model="data.password">
+              <input type="password" placeholder="Password" ng-model="registerData.password">
           </label>
            <label class="item item-input">
-              <input type="password" placeholder="Confirm Password" ng-model="data.password">
+              <input type="password" placeholder="Confirm Password" ng-model="registerData.password">
           </label>
-            
+
       </div>
       <button class="button button-block button-calm" style="background-color: #009900" ng-click="signup()">Sign Up</button>
-      
+
   </ion-content>
 </ion-view>

@@ -1,11 +1,13 @@
-studApp.controller('rentListCtrl', ['$scope', '$http','$stateParams', '$state', '$timeout', '$ionicFilterBar',
-function($scope, $http,$stateParams, $state, $timeout, $ionicFilterBar) {
+studApp.controller('rentListCtrl', ['$scope', '$http','$stateParams', '$state', '$timeout', '$ionicFilterBar', '$rootScope',
+function($scope, $http,$stateParams, $state, $timeout, $ionicFilterBar, rootScope) {
 
     $scope.accResultout = false;
 
     $scope.accs = [];
 
     $scope.filterText = '';
+
+    console.log("Coming to the rentlist controller...");
 
   var backHandler = $scope.$on('onBack', function(event) {
   console.log("backBusy normal is..", $scope.backBusy);
@@ -61,6 +63,12 @@ console.log("calling first one..");
   });
 });
 
+$scope.backToLogin = function() {
+
+  $state.go('login');
+
+}
+
 
 $scope.showFilterBar = function() {
   // rootScope.returned = false;
@@ -103,6 +111,10 @@ $scope.makeAcc = function( acc) {
   localAcc.type = acc.type;
   localAcc.total_size = acc.total_size;
   localAcc.img = "img/studierent_logo.png";
+  localAcc.image = acc.images[0].path;
+  localAcc.image = "http://www.studierent.space/img/properties/" + localAcc.image;
+
+
   localAcc.rent = acc.rent;
 
   return localAcc;

@@ -31,25 +31,36 @@ var studApp = angular.module('starter', ['ionic'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  // setup an abstract state for the tabs directive
   .state('login', {
-url: '/login',
-templateUrl: 'js/login.html',
-controller: 'loginCtrl'
-})
+  url: '/login',
+  templateUrl: 'js/login.html',
+  controller: 'loginCtrl'
+  })
 
-.state('register', {
-url: '/register',
-templateUrl: 'js/register.html',
-controller: 'registerctrl'
-})
+  .state('register', {
+  url: '/register',
+  templateUrl: 'js/register.html',
+  controller: 'registerCtrl'
+  })
 
 
-.state('rentList', {
-url: '/rentList',
-templateUrl: 'js/rent_list.html',
-controller: 'rentListCtrl'
-})
+  .state('rentList', {
+  url: '/rentList',
+  templateUrl: 'js/rent_list.html',
+  controller: 'rentListCtrl'
+  })
+
+  .state('filter', {
+  url: '/filter',
+  templateUrl: 'js/filter.html',
+  controller: 'filterCtrl'
+  })
+
+  .state('detail', {
+  url: '/detail',
+  templateUrl: 'js/detail.html',
+  controller: 'detailCtrl'
+  })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');

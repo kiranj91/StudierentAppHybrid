@@ -1,4 +1,4 @@
-studApp.controller('loginCtrl', ['$scope', '$http','$stateParams', '$state', '$timeout', '$ionicFilterBar', '$ionicLoading',// The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+studApp.controller('registerCtrl', ['$scope', '$http','$stateParams', '$state', '$timeout', '$ionicFilterBar', '$ionicLoading',// The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $http, $stateParams, $state, $timeout, ionicFilterBar, $ionicLoading) {
@@ -16,7 +16,7 @@ function ($scope, $http, $stateParams, $state, $timeout, ionicFilterBar, $ionicL
      Email: '',
     Passowrd: '',
      ConfirmPassword: '',
-   
+
   };
 
   $scope.show = function() {
@@ -35,11 +35,8 @@ function ($scope, $http, $stateParams, $state, $timeout, ionicFilterBar, $ionicL
     $scope.show($ionicLoading);
 
 
-    $state.go('rentList');
+    $state.go('login');
 };
 
 
 }])
-
-
-

@@ -1,0 +1,156 @@
+<ion-view view-title="Filter" name="filter-view">
+  <ion-header-bar ng-show="true" class="bar-positive" style="background-color: #558b2f;">
+    <div class="buttons">
+    </div>
+    <div class="buttons">
+        <button class="button button-icon ion-ios-arrow-back"
+                ng-click="backToLogin()"></button>
+    </div>
+     <h1 class="title">Studierent</h1>
+   </ion-header-bar>
+  <ion-content class="padding">
+    <div>
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Street or Zipcode" ng-model="filterdata.zipcode">
+          </label>
+</div>
+<label class = "item item-input item-select item-stable">
+   <div class = "input-label">
+      Type
+   </div>
+
+   <select>
+      <option>Flatshare</option>
+      <option >Flat</option>
+      <option>Student Residence</option>
+      <option>House</option>
+   </select>
+</label>
+<label class = "item item-input item-select item-stable">
+   <div class = "input-label">
+      Distance
+   </div>
+
+   <select>
+      <option>0 - 2 km / 5 - 10 min walking</option>
+      <option>2 - 5 km / 10 - 30 min walking</option>
+      <option>5+ km / 30+ min walking</option>
+      <option>Direct Bus to University</option>
+   </select>
+</label>
+
+
+</div>
+<ul class="list">
+<li class="item item-checkbox   checkbox-balanced">
+   Electricity Bill Included
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Internet
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Cable TV
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Washing Machine
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+<li class="item item-checkbox   checkbox-balanced">
+   Fire Alerm
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Heating
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Parking
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Bike Parking
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Garden
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Balcony
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+   Smoking Allowed
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+<li class="item item-checkbox   checkbox-balanced">
+  Pets Allowed
+   <label class="checkbox">
+   <input type="checkbox">
+   </label>
+</li>
+
+</ul>
+<div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="Min rent" ng-model="filterdata.minrent">
+          </label>
+          <label class="item item-input">
+              <input type="text" placeholder="Max rent" ng-model="filterdata.maxrent">
+          </label>
+      </div>
+
+      <label class = "item item-input item-select item-stable">
+         <div class = "input-label">
+            Landlord Rating
+         </div>
+
+         <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+         </select>
+      </label>
+      <button class="button button-block button-calm" style="background-color: #009900" ng-click="search()">Search</button>
+      <button class="button button-block button-calm" style="background-color: #009900" ng-click="reset()">Reset</button>
+
+  </ion-content>
+</ion-view>
